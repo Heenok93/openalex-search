@@ -21,9 +21,12 @@ through the OpenAlex API.
 ```bash
 uv sync
 ```
-## You need a OpenAlex mail address/API key
 
+You need a OpenAlex mail address/API key in your environment (.env file at the root)
+
+```text
 OPENALEX_EMAIL=your.email@example.org
+```
 
 ## How to run the app
 
@@ -31,8 +34,7 @@ OPENALEX_EMAIL=your.email@example.org
 uv run streamlit run app.py
 ```
 ## Search modes
-Semantic
-Describe the literature you are looking for:
+Semantic -> Describe the literature you are looking for:
 ```text
 infectious diseases modelling with machine learning methods
 ```
