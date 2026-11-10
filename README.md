@@ -1,10 +1,44 @@
-##README
+# OpenAlex Search
 
-#To run it:
-Save this code as main.py.
+Lightweight Streamlit application for searching scientific literature
+through the OpenAlex API.
 
-Run pip install fastapi uvicorn httpx in your terminal.
+## Features
 
-Start the server: uvicorn main:app --reload.
+- Semantic literature search
+- OQL structured search
+- English/French filtering
+- Publication year filtering
+- Open Access filtering
+- Abstract availability filtering
+- Retracted article exclusion
+- Optional OQL reranking
+- DOI, OpenAlex and PDF links
+- CSV export
 
-Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser anytime you want to search or copy your results!
+## Install
+
+```bash
+uv sync
+```
+## You need a OpenAlex mail address/API key
+
+OPENALEX_EMAIL=your.email@example.org
+
+## How to run the app
+
+```bash
+uv run streamlit run app.py
+```
+## Search modes
+Semantic
+Describe the literature you are looking for:
+```text
+infectious diseases modelling with machine learning methods
+```
+
+## Smart / OQL
+Use OpenAlex Query Language:
+```text
+get works since 2022 about (cholera AND forecasting)
+```
