@@ -11,8 +11,12 @@ wheels/
 .venv
 .env
 
+# Cache and logs
 __pycache__/
-
 .pytest_cache/
 
+# Streamlit secrets file
 .streamlit/secrets.toml
+
+# Executable files
+.bat

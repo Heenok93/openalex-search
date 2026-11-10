@@ -1,3 +1,8 @@
+![Python](https://img.shields.io/badge/Python-3.14-blue)
+![SQLite](https://img.shields.io/badge/SQLite-Database-blue)
+![License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat)
+![GitHub last commit](https://img.shields.io/github/last-commit/Heenok93/watchtower)
+
 # OpenAlex Search
 
 Lightweight Streamlit application for searching scientific literature
@@ -43,4 +48,9 @@ infectious diseases modelling with machine learning methods
 Use OpenAlex Query Language:
 ```text
 get works since 2022 about (cholera AND forecasting)
+```
+
+## To stop the app (in your IDE)
+```text
+CTRL + C
 ```
